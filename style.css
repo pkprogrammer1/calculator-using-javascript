@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#calculator{
+  width: 300px;
+  height:430px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+button{
+  width: 60px;
+  height: 60px;
+  margin: 3px;
+  font-size: 24px;
+  font-weight: 600;
+  flex-grow: 1;
+  border: none;
+  background-color: rgb(232, 232, 232);
+}
+#btn-container{
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  height: 100%;
+}
+#input-box{
+  font-size: 32px;
+  padding: 20px 10px;
+  outline: none;
+}
+.extra-btn{
+  background-color: maroon;
+  color: white;
+  font-size: 30px;
+}
+.extra-btn1{
+  font-size: 30px;
+  color: maroon;
+}
