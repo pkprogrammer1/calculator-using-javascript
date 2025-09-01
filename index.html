@@ -11,78 +11,24 @@
     <div id="calculator">
       <input type="text" id='input-box' readonly>
       <div id="btn-container">
-        <button class="extra-btn1" onclick="
-        currentDisplay ='';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">C</button>
-        <button class="extra-btn1" onclick="
-        currentDisplay =currentDisplay+'/';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">/</button>
-        <button class="extra-btn1" onclick="
-        currentDisplay =currentDisplay+'*';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">*</button>
-        <button class="extra-btn1" onclick="
-        currentDisplay =currentDisplay+'-';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">-</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'7';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">7</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'8';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">8</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'9';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">9</button>
-        <button class="extra-btn1" onclick="
-        currentDisplay =currentDisplay+'+';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">+</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'4';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">4</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'5';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">5</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'6';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">6</button>
-        <button class="extra-btn1" onclick="
-        currentDisplay =currentDisplay+'%';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">%</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'1';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">1</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'2';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">2</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'3';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">3</button>
-        <button class="extra-btn1" onclick="
-        currentDisplay =currentDisplay+'.';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">.</button>
-        <button onclick="
-        currentDisplay =currentDisplay+'0';
-        document.querySelector('#input-box').value = currentDisplay;
-        ">0</button>
-        <button class="extra-btn" onclick="
-        currentDisplay =eval(currentDisplay);
-        document.querySelector('#input-box').value = currentDisplay;
-        ">=</button>
+        <button class="extra-btn1" onclick="clearDisplay()">C</button>
+        <button class="extra-btn1" onclick="appendToDisplay('/')">/</button>
+        <button class="extra-btn1" onclick="appendToDisplay('*')">*</button>
+        <button class="extra-btn1" onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button class="extra-btn1" onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button class="extra-btn1" onclick="appendToDisplay('%')">%</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button class="extra-btn1" onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button class="extra-btn" onclick="calculateResult()">=</button>
       </div>
     </div>
   </div>
